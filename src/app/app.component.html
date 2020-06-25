@@ -27,7 +27,7 @@
                         </div>
                         <label>Date of birth</label>
                         <input type="date" formControlName="dob">
-                        <div *ngIf="dob.invalid&&(password.dirty || dob.touched)" class="danger">
+                        <div *ngIf="dob.invalid&&(dob.dirty || dob.touched)" class="danger">
                             <div *ngIf="dob.errors.required">
                                 *Date of birth is required
                             </div>
